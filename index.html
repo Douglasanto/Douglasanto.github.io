@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <a id="lightModeToggle" class="" aria-label="Turn On Light Mood" href="#">
+                    <div class="hover-container">
+                        <span class="hover-trigger" onmouseover="showFullText()" onmouseout="hideFullText()">DES</span>
+                        <span id="full-text" class="full-text">EVOLVEDOR</span>
+                    </div>
+                </a>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/Douglasanto" target="_blank" rel="noopener noreferrer">
+                                <img src="/src/git.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/douglassanto" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="/src/Linker.svg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="about">
+        <div class="main-wrap">
+            <div class="wrap-projects">
+                <a href="#" onclick="showProject('welcome')">
+                    <span>Welcome</span>
+                </a>
+                <h2>Experiências</h2>
+                <a href="#" onclick="showProject('Nexo Jornal')">
+                    <span>Nexo Jornal</span>
+                </a>
+                <h2>Projetos</h2>
+                <a href="#" onclick="showProject('ClowBozy')">
+                    <span>ClowBozy</span>
+                </a>
+                <a href="#" onclick="showProject('Bahia Sat')">
+                    <span>Bahia Sat</span>
+                </a>
+                <a href="#" onclick="showProject('MB Transportes')">
+                    <span>MB Transportes</span>
+                </a>
+            </div>
+        </div>
+        <section id="outra-section" style="display: none;">
+        </section>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
